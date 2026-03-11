@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terumo Hub | Panel Principal</title>
+    <title>Terumo Hub | Gestión de Laboratorio</title>
     <link rel="stylesheet" href="style.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;600;800&display=swap"
@@ -20,90 +20,25 @@
 
     <div class="container">
         <header>
-            <div class="logo">TERUMO</div>
-            <h1>Ecosistema de Calibración & Gestión</h1>
-            <p class="subtitle">Acceso centralizado a todos los sistemas integrados</p>
+            <h1 id="mainTitle">Sistema de Gestión de Laboratorio</h1>
+            <p class="subtitle" id="mainSubtitle">Selecciona una categoría para comenzar</p>
         </header>
 
-        <main class="hub-grid">
-            <!-- Relevamientos -->
-            <a href="https://henrysalinas1985-source.github.io/eqquipos/" target="_blank" class="hub-card">
-                <div class="card-icon">📋</div>
-                <div class="card-content">
-                    <h3>Relevamientos</h3>
-                    <p>Gestión y registro de equipos en campo.</p>
-                </div>
-                <div class="card-arrow">→</div>
-            </a>
+        <!-- Navegación "Atrás" -->
+        <div id="backNav" class="back-nav hidden">
+            <button onclick="router.home()" class="btn-back">← Volver al Inicio</button>
+        </div>
 
-            <!-- Calibraciones -->
-            <a href="https://henrysalinas1985-source.github.io/eqquipos/" target="_blank" class="hub-card">
-                <div class="card-icon">⚖️</div>
-                <div class="card-content">
-                    <h3>Calibraciones</h3>
-                    <p>Control y gestión de procesos de calibración.</p>
-                </div>
-                <div class="card-arrow">→</div>
-            </a>
-
-            <!-- Mondis -->
-            <a href="https://henrysalinas1985-source.github.io/MONITOREO/" target="_blank"
-                class="hub-card accent-mondis">
-                <div class="card-icon">📊</div>
-                <div class="card-content">
-                    <h3>Mondis</h3>
-                    <p>Monitoreo inteligente de sensores y registros.</p>
-                </div>
-                <div class="card-arrow">→</div>
-            </a>
-
-            <!-- Datalogger -->
-            <a href="https://henrysalinas1985-source.github.io/datalogger/" target="_blank"
-                class="hub-card accent-data">
-                <div class="card-icon">📈</div>
-                <div class="card-content">
-                    <h3>Datalogger</h3>
-                    <p>Análisis de datos históricos y trazabilidad.</p>
-                </div>
-                <div class="card-arrow">→</div>
-            </a>
-
-            <!-- Investigación -->
-            <a href="https://henrysalinas1985-source.github.io/CSL/" target="_blank" class="hub-card accent-csl">
-                <div class="card-icon">🔍</div>
-                <div class="card-content">
-                    <h3>Investigación</h3>
-                    <p>Módulo de análisis CSL e investigación técnica.</p>
-                </div>
-                <div class="card-arrow">→</div>
-            </a>
-
-            <!-- Centrifugas -->
-            <a href="https://henrysalinas1985-source.github.io/Centrifugas/" target="_blank"
-                class="hub-card accent-cen">
-                <div class="card-icon">⚙️</div>
-                <div class="card-content">
-                    <h3>Centrífugas</h3>
-                    <p>Gestión de mantenimiento y calibración de centrífugas.</p>
-                </div>
-                <div class="card-arrow">→</div>
-            </a>
-
-            <!-- Baños térmicos -->
-            <a href="https://henrysalinas1985-source.github.io/T-rmicos/" target="_blank" class="hub-card accent-ban">
-                <div class="card-icon">🌡️</div>
-                <div class="card-content">
-                    <h3>Baños Térmicos</h3>
-                    <p>Control de temperatura y calibración de baños.</p>
-                </div>
-                <div class="card-arrow">→</div>
-            </a>
+        <main id="hubContent" class="hub-grid fade-in">
+            <!-- El contenido se genera dinámicamente -->
         </main>
 
         <footer>
-            <p>&copy; 2026 Terumo Gestión Técnica | Desarrollado para alta precisión</p>
+            <p>&copy; 2026 Terumo Gestión Técnica | Alta Precisión & Trazabilidad</p>
         </footer>
     </div>
+
+    <script src="app.js"></script>
 </body>
 
 </html>
