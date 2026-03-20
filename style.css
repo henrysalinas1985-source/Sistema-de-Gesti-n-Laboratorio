@@ -16,6 +16,8 @@
     --ban: #ef4444;
     --rev: #8b5cf6;
     --cal: #06b6d4;
+    --doc: #0ea5e9;
+    --pip: #ec4899;
 }
 
 * {
@@ -104,16 +106,6 @@ header {
     margin-bottom: 50px;
 }
 
-.logo {
-    font-family: 'Outfit', sans-serif;
-    font-weight: 800;
-    font-size: 1rem;
-    letter-spacing: 0.4em;
-    color: var(--accent);
-    margin-bottom: 15px;
-    opacity: 0.8;
-}
-
 h1 {
     font-family: 'Outfit', sans-serif;
     font-size: 3.5rem;
@@ -168,9 +160,9 @@ h1 {
     margin-bottom: 60px;
 }
 
-/* Estilo para la Home (2 cards grandes) */
+/* Estilo para la Home (3 cards) */
 .hub-grid:has(.accent-rev) {
-    max-width: 800px;
+    max-width: 1100px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -312,6 +304,16 @@ h1 {
 .accent-csl:hover {
     border-color: var(--csl);
     background: rgba(244, 63, 94, 0.1);
+}
+
+.accent-doc:hover {
+    border-color: var(--doc);
+    background: rgba(14, 165, 233, 0.1);
+}
+
+.accent-pip:hover {
+    border-color: var(--pip);
+    background: rgba(236, 72, 153, 0.1);
 }
 
 /* Footer */

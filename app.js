@@ -26,6 +26,14 @@ const router = {
                     icon: "⚖️",
                     action: "router.calibraciones()",
                     accent: "accent-cal"
+                },
+                {
+                    id: 'doc',
+                    title: "Documentación",
+                    desc: "Lector de carpetas y organización de documentos.",
+                    icon: "📂",
+                    action: "router.documentacion()",
+                    accent: "accent-doc"
                 }
             ]
         },
@@ -45,7 +53,7 @@ const router = {
                     title: "Investigación",
                     desc: "Módulo de análisis CSL e investigación técnica profunda.",
                     icon: "🔍",
-                    url: "https://henrysalinas1985-source.github.io/CSL/",
+                    url: "../CSL Inventario/index.html",
                     accent: "accent-csl"
                 }
             ]
@@ -59,29 +67,50 @@ const router = {
                     title: "Mondis",
                     desc: "Monitoreo inteligente de sensores y registros Mondis.",
                     icon: "📊",
-                    url: "https://henrysalinas1985-source.github.io/MONITOREO/",
+                    url: "../mondis/index.html",
                     accent: "accent-mondis"
                 },
                 {
                     title: "Centrífugas",
                     desc: "Calibración y mantenimiento preventivo de centrífugas.",
                     icon: "⚙️",
-                    url: "https://henrysalinas1985-source.github.io/Centrifugas/",
+                    url: "../Centrifugas/index.html",
                     accent: "accent-cen"
                 },
                 {
                     title: "Datalogger",
                     desc: "Trazabilidad y análisis de datos de dataloggers.",
                     icon: "📈",
-                    url: "https://henrysalinas1985-source.github.io/datalogger/",
+                    url: "../Datalogger/index.html",
                     accent: "accent-data"
                 },
                 {
                     title: "Baños Térmicos",
                     desc: "Control de temperatura y calibración de baños térmicos.",
                     icon: "🌡️",
-                    url: "https://henrysalinas1985-source.github.io/T-rmicos/",
+                    url: "../Baños/index.html",
                     accent: "accent-ban"
+                },
+                {
+                    title: "Pipetas",
+                    desc: "Gestión de pipetas, extracción de PDF y control de vencimientos.",
+                    icon: "🧪",
+                    url: "../Pipetas/index.html",
+                    accent: "accent-pip"
+                }
+            ]
+        },
+        documentacion: {
+            title: "Gestión Documental",
+            subtitle: "Herramientas para la organización de archivos",
+            showBack: true,
+            cards: [
+                {
+                    title: "Lector de Carpetas",
+                    desc: "Análisis dinámico de subcarpetas y extracción de datos.",
+                    icon: "📁",
+                    url: "../Lista x carpeta/lista_catamarca.html",
+                    accent: "accent-doc"
                 }
             ]
         }
@@ -130,7 +159,8 @@ const router = {
 
     home() { this.render('home'); },
     relevamientos() { this.render('relevamientos'); },
-    calibraciones() { this.render('calibraciones'); }
+    calibraciones() { this.render('calibraciones'); },
+    documentacion() { this.render('documentacion'); }
 };
 
 // Iniciar Hub
